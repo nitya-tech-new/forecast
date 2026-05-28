@@ -4,7 +4,7 @@ exports.handler = async function(event) {
     event.queryStringParameters.city
 
     const apiKey =
-    process.env.API_KEY
+    process.env.api_key
 
     const url =
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`

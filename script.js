@@ -2,10 +2,8 @@ const searchButton = document.getElementById("search")
 
 async function getWeather(city){
 
-    const apiKey = config.API_KEY
-    const url =
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-
+    const apiKey = config.api_key
+    const url =`/.netlify/functions/weather?city=${city}`
     try{
 
         const response =
